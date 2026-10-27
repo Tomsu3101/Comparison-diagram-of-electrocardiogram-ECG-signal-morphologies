@@ -12,7 +12,7 @@ plt.rcParams['figure.figsize'] = (12, 6)
 df = pd.read_csv('mitbih_test.csv.zip.csv', header=None)
 
 # Kiểm tra kích thước dữ liệu (số dòng, số cột)
-print("Kích thước dữ liệu:", df.shape)
+print("Data size:", df.shape)
 
 # Xem 5 dòng đầu tiên
 display(df.head())
