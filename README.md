@@ -1,3 +1,4 @@
+[mitbih_test.csv.zip](https://github.com/user-attachments/files/34027343/mitbih_test.csv.zip)
 
 import pandas as pd
 import numpy as np
@@ -8,7 +9,7 @@ plt.style.use('seaborn-v0_8-whitegrid')
 plt.rcParams['figure.figsize'] = (12, 6)
 
 # Đọc file CSV, không dùng dòng đầu làm tiêu đề vì dữ liệu thuần số
-df = pd.read_csv('mitbih_train.csv', header=None)
+df = pd.read_csv('mitbih_test.csv.zip.csv', header=None)
 
 # Kiểm tra kích thước dữ liệu (số dòng, số cột)
 print("Kích thước dữ liệu:", df.shape)
