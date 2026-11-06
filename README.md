@@ -1,47 +1,59 @@
 <img width="1149" height="545" alt="Comparison table of electrocardiogram (ECG) signal morphologies" src="https://github.com/user-attachments/assets/852f3422-7f72-4cef-921e-89a7ffb2677a" />
 This is the zip file I used [mitbih_test.csv.zip](https://github.com/user-attachments/files/34027343/mitbih_test.csv.zip)
 
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+<h1>Comparison diagram of electrocardiogram (ECG) signal morphologies</h1>
 
-# Customize the default size and style of charts for a polished look
-plt.style.use('seaborn-v0_8-whitegrid')
-plt.rcParams['figure.figsize'] = (12, 6)
 
-# Read the CSV file without using the first row as a header, as the data consists purely of numbers
-df = pd.read_csv('mitbih_test.csv.zip.csv', header=None)
+<h2>Description</h2>
+Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+<br />
 
-# Check the data dimensions (number of rows, number of columns)
-print("Data size:", df.shape)
 
-# Display first 5 rows
-display(df.head())
+<h2>Languages Used</h2>
 
-# Extract all rows labeled 0 (Normal) and 1 (Supraventricular)
-normal_beats = df[df[187] == 0.0]
-abnormal_beats = df[df[187] == 1.0]
+- <b>Python</b> 
 
-# Extract the first row of data from each group, excluding the final label column ([:-1])
-sample_normal = normal_beats.iloc[0, :-1]
-sample_abnormal = abnormal_beats.iloc[0, :-1]
+<h2>Environments Used </h2>
 
-# Initialize canvas
-plt.figure(figsize=(14, 6))
+- <b>Windows 11</b> (21H2)
 
-# Draw a normal signal line (in blue)
-plt.plot(sample_normal, color='#2c3e50', linewidth=2, label="(Normal beats)")
+<h2>Program walk-through:</h2>
 
-# Draw the anomalous signal line (in red)
-plt.plot(sample_abnormal, color='#e74c3c', linewidth=2, label="(Arrhythmia)")
+<p align="center">
+Launch the utility: <br/>
+<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Enter the number of passes: <br/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Confirm your selection:  <br/>
+<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Wait for process to complete (may take some time):  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Sanitization complete:  <br/>
+<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Observe the wiped disk:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
-# Add information for axes and titles
-plt.title("Comparison table of electrocardiogram (ECG) signal morphologies", fontsize=16, fontweight='bold')
-plt.xlabel("(Time Steps)", fontsize=12)
-plt.ylabel("(Normalized Amplitude)", fontsize=12)
-
-# Display captions
-plt.legend(loc='upper right', fontsize=12)
-
-# Export graph
-plt.show()
+<!--
+ ```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+--!>
