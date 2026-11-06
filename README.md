@@ -1,52 +1,58 @@
-<img width="1149" height="545" alt="Comparison table of electrocardiogram (ECG) signal morphologies" src="https://github.com/user-attachments/assets/852f3422-7f72-4cef-921e-89a7ffb2677a" />
-This is the zip file I used [mitbih_test.csv.zip](https://github.com/user-attachments/files/34027343/mitbih_test.csv.zip)
-
-<h1>Comparison diagram of electrocardiogram (ECG) signal morphologies</h1>
+<h1>Comparison of ECG Signal Morphologies (MIT-BIH)</h1>
 
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+This repository provides a detailed, step-by-step guide for analyzing cardiac waveform data and generating plots that compare the morphologies of electrocardiogram (ECG) signals. The steps outlined below utilize standard Python data science libraries to simulate, process, and visualize the structural differences between a normal sinus rhythm and a premature ventricular contraction (PVC).
 <br />
 
 
 <h2>Languages Used</h2>
 
 - <b>Python</b> 
+- <b>Google Colab</b> 
 
 <h2>Environments Used </h2>
 
-- <b>Windows 11</b> (21H2)
+- <b>Google Colab</b> 
 
 <h2>Program walk-through:</h2>
-
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Open Google Colab: <br/>
+<img width="1140" height="702" alt="image" src="https://github.com/user-attachments/assets/da90331f-f905-45d4-aabc-6fafcba478cd" />
+<img width="990" height="300" alt="image" src="https://github.com/user-attachments/assets/c19e6216-8a4a-4cd5-b117-a5c1a562f630" />
+New notebook: <br/>
+<img width="1919" height="911" alt="image" src="https://github.com/user-attachments/assets/5984befb-1059-4f22-b136-c829709a7fbe" />
+ 
+Step 1: Importing Dependencies:<br/>
+ 
+<img width="314" height="112" alt="image" src="https://github.com/user-attachments/assets/67373c1b-b77a-4908-9b4c-4e10e23943bd" />
+ 
+Step 2: Loading the Dataset<br/>
+ 
+<img width="476" height="92" alt="image" src="https://github.com/user-attachments/assets/924b8a5b-f113-484f-8955-09f9cf929437" />
+
+Step 3: Defining Class Labels<br/>
+
+<img width="484" height="207" alt="image" src="https://github.com/user-attachments/assets/899b92d9-f47b-4a9d-9578-ce6128b0135a" />
+
+Step 4: Initializing the Figure Grid<br/>
+
+<img width="646" height="91" alt="image" src="https://github.com/user-attachments/assets/b67e0a73-96dc-4704-899c-a000dfd110de" />
+
+Step 5: Extracting and Plotting Data (The Loop)<br/>
+
+<img width="853" height="378" alt="image" src="https://github.com/user-attachments/assets/3a212495-3bb3-439f-a0b9-8c56e66f64a1" />
+
+Step 6: Final Formatting and Rendering<br/>
+
+<img width="722" height="226" alt="image" src="https://github.com/user-attachments/assets/447b4f35-7bd0-427f-b708-ef8b566dc373" />
+
+
+
+</h2>FINAL RESULT:</h2><br/>
+
+<img width="982" height="1228" alt="image" src="https://github.com/user-attachments/assets/b61216ed-985e-478f-bcc4-a467aa7835e3" />
+
 
 <!--
  ```diff
