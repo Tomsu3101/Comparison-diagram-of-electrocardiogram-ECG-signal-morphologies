@@ -23,7 +23,7 @@ Open Google Colab: <br/>
 New notebook: <br/>
 <img width="1919" height="911" alt="image" src="https://github.com/user-attachments/assets/5984befb-1059-4f22-b136-c829709a7fbe" />
  
-Step 1: Importing Dependencies:<br/>
+Step 1: Importing Dependencies<br/>
  
 <img width="314" height="112" alt="image" src="https://github.com/user-attachments/assets/67373c1b-b77a-4908-9b4c-4e10e23943bd" />
  
@@ -48,10 +48,6 @@ Step 6: Final Formatting and Rendering<br/>
 <img width="722" height="226" alt="image" src="https://github.com/user-attachments/assets/447b4f35-7bd0-427f-b708-ef8b566dc373" />
 
 
-
-</h2>FINAL RESULT:</h2>
-
-<img width="982" height="1228" alt="image" src="https://github.com/user-attachments/assets/b61216ed-985e-478f-bcc4-a467aa7835e3" />
 
 
 <!--
