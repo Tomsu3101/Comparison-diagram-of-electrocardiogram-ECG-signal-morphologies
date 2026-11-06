@@ -49,7 +49,7 @@ Step 6: Final Formatting and Rendering<br/>
 
 
 
-</h2>FINAL RESULT:</h2><br/>
+</h2>FINAL RESULT:</h2>
 
 <img width="982" height="1228" alt="image" src="https://github.com/user-attachments/assets/b61216ed-985e-478f-bcc4-a467aa7835e3" />
 
